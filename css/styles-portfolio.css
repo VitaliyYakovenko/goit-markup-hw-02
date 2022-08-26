@@ -1,5 +1,10 @@
 
-
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #212121;
+    letter-spacing: 0.03em;
+}
 
 .link {
     text-decoration: none;
@@ -7,3 +12,10 @@
 .list {
     list-style: none;
 }
+/* header */
+
+/* main */
+
+
+/* footer */
+
