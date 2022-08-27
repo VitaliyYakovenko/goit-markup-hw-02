@@ -1,7 +1,20 @@
-
+:root {
+    --style-color: #2196F3;
+    --btn-focus-color:#FFFFFF;
+    --nav-link-color:#212121;
+    --header-sp-logo-color: #000000;
+    --contact-link-color-text: #757575;
+    --foot-sp-logo-address-map: #FFFFFF;
+    --address-link-color:rgba(255, 255, 255, 0.6);
+    --header-bg-color:#FFFFFF;
+    --btn-bg-color: #F5F5F5;
+    --main-bg-color:#F5F5F5;
+    --footer-bg-color: #2F303A;
+}
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    background-color: #F5F5F5;
     color: #212121;
     letter-spacing: 0.03em;
 }
@@ -13,9 +26,115 @@ body {
     list-style: none;
 }
 /* header */
-
+.page-header {
+    background-color: var(--header-bg-color);
+}
+.header-logo {
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--style-color);          
+}
+.header-sp-logo {
+    color: var(--header-sp-logo-color);
+}
+.nav-link {
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--nav-link-color);
+        
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--style-color);
+}
+.contact-link {             
+        line-height: 1.4px;
+        letter-spacing: 0.02em;   
+        color: var(--contact-link-color-text);
+}
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--style-color);
+}
+;
 /* main */
+.page-main {
+  background-color: var(--main-bg-color);
+}
+.section-titel {
+    visibility: hidden;
+}
+
+
+
+.section-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;   
+    background-color: var(--btn-bg-color);
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+.section-btn:hover,
+.section-btn:focus {
+   color:var(--btn-focus-color);
+   background-color: var(--style-color);
+   box-shadow: 
+   0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+     0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.section-h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+}
+.section-text {
+    font-size: 16px;
+    line-height: 1.57; 
+    color: var(--contact-link-color-text);
+}
 
 
 /* footer */
-
+.page-footer{
+background: var(--footer-bg-color); 
+}
+.footer-logo {
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;            
+    color: var(--style-color);
+}
+.footer-sp-logo {
+   color: var(--foot-sp-logo-address-map);
+}
+.address-list {
+    font-style: normal;
+}
+.address-map {    
+        line-height: 1.4;       
+        color: var(--foot-sp-logo-address-map);
+}
+.address-map:hover,
+.address-map:focus {
+    color: var(--style-color);
+}
+.address-link {
+        font-size: 14px;
+        line-height: 1.4;             
+        color: var(--address-link-color);
+}
+.address-link:hover,
+.address-link:focus {
+    color: var(--style-color);
+}

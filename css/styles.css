@@ -1,8 +1,21 @@
+:root {
+    --main-text-color:#212121;
+    --titel-button-adress-map-color:#FFFFFF;
+    --style-color:#2196F3;
+    --logo-sp-head-color:#000000;
+    --nav-link-color:#212121;
+    --contact-link-p-color:#757575;
+    --address-link-color: rgba(255, 255, 255, 0.6);
 
+    --second-third-section-bg-color: #F5F5F5;
+    --fourth-section-bg-color: #F5F4FA;
+    --header-bg-color:#FFFFFF;
+    --first-section-footer-bg-color:#2F303A;
+}
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    color: #212121;
+    color:  var(--main-text-color);
     letter-spacing: 0.03em;
 }
 
@@ -14,45 +27,36 @@ body {
     list-style: none;
     
 }
-/* логотип-футер #000000;
-заголовк и кнопка #FFFFFF;
-цвет стиля ховера и фокуса #2196F3
-основной цвет текста #212121
-второстепенный цвет текста #757575
-цвет фона-хедере #FFFFFF
-цвет-фона-мэйн-футер #2F303A
-цвет-фона-4-секция #F5F4FA
-цвет-текста-футер #FFFFFF */
 
 /* header */ 
 .page-header {
-    background-color: #FFFFFF;
+    background-color: var(--header-bg-color)
 
 }
 .logo {
     font-family: 'Raleway', sans-serif;
-    color: #2196F3;
+    color: var(--style-color);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
 
 }
 .logo-sp-head {
-  color: #000000;
+  color: var(--logo-sp-head-color);
 }
 .nav-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: #212121;
+    color: var(--nav-link-color);
     letter-spacing: 0.02em;
 }
 .nav-link:hover,
 .nav-link:focus {
-    color: #2196F3;
+    color: var(--style-color)
 }
 .contact-link {
-    color: #757575;
+    color: var(--contact-link-p-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -60,15 +64,15 @@ body {
 }
 .contact-link:hover,
 .contact-link:focus {
-    color: #2196F3;
+    color: var(--style-color);
 }
 /* main */
 /* first-section */
 .first-section {
-    background-color:#2F303A;
+    background-color:var(--first-section-footer-bg-color);
 }
 .section-h1 {
-    color: #FFFFFF;
+    color: var(--titel-button-adress-map-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -79,8 +83,8 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color:  var(--titel-button-adress-map-color);
+    background-color: var(--style-color);
     cursor: pointer;
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -88,7 +92,7 @@ body {
 }
 /* second-section */
 .second-section {
-    background-color: #F5F5F5;
+    background-color: var(--second-third-section-bg-color);
 }
 .second-section-h2 {
     visibility: hidden;
@@ -100,11 +104,11 @@ body {
 }
 .second-section-p {
     line-height: 2;
-    color: #757575;
+    color: var(--contact-link-p-color);
 }
 /* third-section */
 .third-section {
-    background-color: #F5F5F5;
+    background-color: var(--second-third-section-bg-color);
 }
 .third-section-h2 {
     font-weight: 700;
@@ -114,7 +118,7 @@ body {
 
 /* fourth-section */
 .fourth-section {
-    background-color: #F5F4FA;
+    background-color: var(--fourth-section-bg-color);
 }
 .fourth-section-img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -136,23 +140,23 @@ body {
 .fourth-section-p {
     font-size: 16px;
     line-height: 1.8;
-    color: #757575;
+    color: var(--contact-link-p-color);
 }
 
 
 /* footer */
 .page-footer {
-    background-color:#2F303A;
+    background-color:var(--first-section-footer-bg-color);
 }
 .footer-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 2;
-    color: #2196F3;
+    color: var(--style-color);
 }
 .footer-sp-logo {
-    color: #FFFFFF;
+    color: var(--titel-button-adress-map-color);
 }
 .address-item {
     font-style: normal;
@@ -160,18 +164,18 @@ body {
 
 .address-map {
     line-height: 2;
-    color: #FFFFFF;
+    color: var(--titel-button-adress-map-color);
 }
 .address-map:hover,
 .address-map:focus {
-    color: #2196F3;
+    color: var(--style-color);
 }
 .address-link {
     line-height: 2;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--address-link-color);
     
 }
 .address-link:hover,
 .address-link:focus {
-    color: #2196F3;
+    color: var(--style-color);
 }
