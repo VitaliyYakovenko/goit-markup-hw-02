@@ -1,8 +1,9 @@
 :root {
-    --main-text-color: #212121;
+    --main-text-color:#757575;
+    /* --contact-link-text-color: #757575; */
+    --titel-link-color: #212121;
     --style-color: #2196F3;
     --logo-sp-head-color: #000000;
-    --contact-link-text-color: #757575;
     --hero-titel-color:#FFFFFF;
     --main-btn-color:#FFFFFF;
     --footer-sp-logo-color: #FFFFFF;
@@ -10,12 +11,9 @@
     --address-link-color: rgba(255, 255, 255, 0.6);
     --btn-hover-focus-color: #FFFFFF;
 /*--------------------------------------------------------*/
-    --header-bg-color: #FFFFFF;
-    --first-section-bg-color: #2F303A;
-    --second-section-bg-color: #F5F5F5;
-    --third-section-bg-color:#F5F5F5;
-    --fourth-section-bg-color:#F5F4FA;
-    --portfolio-bg-color: #F5F5F5;
+    --main-bg-color: #FFFFFF;
+    --hero-section-bg-color: #2F303A;
+    --teams-section-bg-color:#F5F4FA;
     --kit-btn-bg-color:#F5F4FA;
     --footer-bg-color: #2F303A;    
 }
@@ -24,7 +22,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    line-height: 1.71;
     color: var(--main-text-color);
+    background-color: var(--main-bg-color);
     letter-spacing: 0.03em;
 }
 
@@ -40,7 +40,7 @@ body {
                                        /* Студія */
 /* Header - Студія - Портфоліо */
 .page-header {
-    background-color: var(--header-bg-color);
+    background-color: inherit;
 }
 .logo {
     font-family: 'Raleway',sans-serif;
@@ -57,7 +57,7 @@ body {
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.02em;
-    color: inherit;
+    color: var(--titel-link-color);
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -67,18 +67,18 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;     
-    color: var(--contact-link-text-color);
+    color: inherit;
 }
 .contact-link:hover,
 .contact-link:focus {
     color: var(--style-color);
 }
 /* Main */
-/* first-section */
-.first-section {
-   background-color:var(--first-section-bg-color);
+/* hero-section */
+.hero-section {
+   background-color:var(--hero-section-bg-color);
 }
-.section-hero-titel {
+.hero-titel {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -99,63 +99,58 @@ body {
     color: var(--main-btn-color);
     cursor: pointer;
 }
-/* Second-section */
-.second-section {
-    background-color: var(--second-section-bg-color);
+/* benefits-section */
+.benefits-section {
+    background-color: inherit;
 }
-.second-section-titel {
+.benefits-titel {
     visibility: hidden;
+    
 }
-.second-section-benefits {
+.benefits-points {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;    
+    color: var(--titel-link-color);
+}
+.benefits-text {
+    font-size: 14px;
     color: inherit;
 }
-.second-section-text {
-    font-size: 14px;
-    line-height: 1.7;    
-    color: var(--contact-link-text-color);
+/* works-section */
+.works-section {
+    background-color: inherit;
 }
-/* Third-section */
-.third-section {
-    background-color: var(--third-section-bg-color);
-}
-.third-section-titel {
+.works-titel {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;  
-    color: inherit;
+    color: var(--titel-link-color);
 }
-/* Fourth-section */
-.fourth-section {
-    background-color: var(--fourth-section-bg-color);
+/* teams-section */
+.teams-section {
+    background-color: var(--teams-section-bg-color);
+
 }
-.fourth-section-titel {
+.teams-titel {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    color: inherit;
+    color: var(--titel-link-color);
 }
-/* .fourth-section-img {
-    background-color: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-            0px 1px 1px rgba(0, 0, 0, 0.14),
-            0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px
-} */
-.fourth-section-name {
+
+.teams-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.8;                 
-    color: inherit;
+    color: var(--titel-link-color);
 }
-.fourth-section-text {
+.teams-position-text {
     font-size: 16px;
     line-height: 1.8;   
-    color: var(--contact-link-text-color);
+    color: inherit;
 }
 /* Footer - Студія - Портфоліо */
 .page-footer {
@@ -176,8 +171,7 @@ body {
     color: var(--footer-sp-logo-color);
 }
 .address-map {
-    font-size: 14px;
-    line-height: 1.7;          
+    font-size: 14px;         
     color: var(--address-map-color);
 }
 .address-map:hover,
@@ -185,7 +179,6 @@ body {
     color: var(--style-color);
 }
 .address-link {
-    line-height: 1.7;
     color: var(--address-link-color);
 }
 .address-link:hover,
@@ -195,7 +188,7 @@ body {
                                        /* Портфоліо */
 /* Main */
 .section {
-    background-color: var(--portfolio-bg-color);
+  background-color: inherit;
 }
 .main-titel {
     visibility: hidden;
@@ -206,7 +199,7 @@ body {
     font-size: 16px;
     line-height: 1.6;  
     text-align: center;    
-    color: inherit;
+    color: var(--titel-link-color);
     background-color: var(--kit-btn-bg-color);
     border-radius: 4px;
     cursor: pointer;
@@ -220,13 +213,13 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;   
-    letter-spacing: 0.06em;   
-    color: inherit;
+    letter-spacing: 0.06em;
+    color: var(--titel-link-color);
 }
 .section-text {
     font-size: 16px;
     line-height: 1.9;
-    color: var(--contact-link-text-color);
+    color: inherit;
 }
 /* Footer */
 .address-link {
